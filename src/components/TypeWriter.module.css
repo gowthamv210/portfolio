@@ -1,0 +1,23 @@
+/* AUDIOWIDE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+.typeWriter {
+  font-size: larger;
+  font-family: "Audiowide";
+  white-space: nowrap;
+  font-size: 1.7rem;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.text {
+  color: #7db455;
+  border-right: 2px solid;
+  animation: typing-cursor 0.7s steps(1) infinite;
+}
+
+@keyframes typing-cursor {
+  50% {
+    border-color: transparent;
+  }
+}

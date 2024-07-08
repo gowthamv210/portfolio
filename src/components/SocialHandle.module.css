@@ -1,0 +1,51 @@
+.mail_icon {
+  color: #d93025;
+  font-size: 1.5rem;
+  transition: transform 0.1s, color 0.3s ease;
+}
+
+.mail_icon:hover {
+  color: #b22222;
+  transform: scale(1.1);
+}
+.linkedin_icon {
+  color: #0077b5;
+  font-size: 1.5rem;
+  transition: transform 0.1s, color 0.3s ease;
+}
+
+.linkedin_icon:hover {
+  color: #005983;
+  transform: scale(1.1);
+}
+
+.github_icon {
+  color: #181717;
+  font-size: 1.5rem;
+  transition: transform 0.1s, color 0.3s ease;
+}
+
+.github_icon:hover {
+  color: #333;
+  transform: scale(1.1);
+}
+
+.instagram_icon {
+  color: #e4405f;
+  font-size: 1.5rem;
+  transition: transform 0.1s, color 0.3s ease;
+}
+
+.instagram_icon:hover {
+  color: #d62976;
+  transform: scale(1.1);
+}
+
+.socialContainer {
+  gap: 5px;
+}
+
+.socialContainer svg {
+  margin: 0px 10px;
+  cursor: pointer;
+}

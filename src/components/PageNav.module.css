@@ -1,0 +1,157 @@
+/* AUDIOWIDE FONT*/
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+.navbar {
+  position: relative;
+  top: 0;
+  z-index: 998;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5%;
+  font-family: "Audiowide";
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
+  transition: all 0.5s ease-in-out;
+}
+
+.navSticky {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  font-family: "Audiowide";
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 30px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
+}
+
+.logo {
+  margin: 10px;
+  cursor: pointer;
+  color: #3e3a3aeb;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navList ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+}
+
+.navList ul li {
+  margin: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.24s;
+  cursor: pointer;
+}
+
+.navList ul li:hover {
+  color: #88ce52;
+}
+
+.navList a:global(.active) {
+  color: #88ce52;
+}
+
+.navList a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.navSidebar {
+  display: none;
+}
+
+#sidebarActive {
+  display: none;
+}
+
+.openSidebarButton,
+.closeSidebarButton {
+  padding: 0 10px;
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .navList ul {
+    display: none;
+  }
+
+  .navSidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+  }
+
+  .navSidebarOpen {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    list-style: none;
+    width: 80%;
+    height: 100%;
+    right: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.09);
+    overflow: hidden;
+    transition: right 0.3s ease-in-out, transform 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
+    transform: scale(1);
+  }
+
+  .closeBar {
+    padding: 0.7rem;
+  }
+
+  .navSidebarOpen li {
+    margin: 0.5rem;
+    width: 100%;
+    padding: 0.7rem;
+    cursor: pointer;
+    display: flex;
+  }
+
+  .navSidebarOpen a:hover {
+    color: #88ce52;
+  }
+  .navSidebarOpen a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .openSidebarButton,
+  .closeSidebarButton {
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+  }
+
+  #overlay {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+}

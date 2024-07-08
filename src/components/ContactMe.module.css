@@ -1,0 +1,102 @@
+/* AUDIOWIDE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+/* GENOS FONT */
+@import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,300..900;1,300..900&display=swap");
+
+.contactMe_box {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactMe_box h1 {
+  font-size: 4.6rem;
+}
+
+.contactMe_info {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 1.5rem;
+  transition: all 0.24s;
+  gap: 10px;
+  box-shadow: rgba(23, 92, 230, 0.1) 0px 4px 24px;
+}
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30rem;
+  gap: 1rem;
+}
+
+.inputBox {
+  font-family: "Genos";
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  width: 100%;
+  outline: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: rgba(23, 92, 230, 0.1) 0px 4px 24px;
+  border-radius: 8px;
+}
+
+.inputBox:focus {
+  border-color: #88ce52;
+  box-shadow: 0 0 5px rgba(136, 206, 82, 0.5);
+}
+
+@media (max-width: 950px) {
+  .contactMe_box h1 {
+    font-size: 2.5rem;
+  }
+  .contactMe_box h4 {
+    font-size: 0.8rem;
+  }
+
+  .contactMe_info {
+    margin: 3rem;
+    padding: 1.5rem;
+    gap: 10px;
+  }
+
+  .formBox {
+    width: 23rem;
+    gap: 1rem;
+  }
+
+  .inputBox {
+    font-size: 1rem;
+    padding: 0.4rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .contactMe_info {
+    margin: 2rem;
+    padding: 1rem;
+  }
+
+  .contactMe_info h4 {
+    font-size: 0.9rem;
+  }
+
+  .formBox {
+    width: 16rem;
+    gap: 0.5rem;
+  }
+
+  .inputBox {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+    width: 100%;
+  }
+}

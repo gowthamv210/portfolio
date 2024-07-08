@@ -1,0 +1,81 @@
+/* AUDIOWIDE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+/* GENOS FONT */
+@import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-green: #88ce52;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(249, 249, 249);
+  color: #3e3a3aeb;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Audiowide";
+}
+
+p {
+  font-family: "Genos";
+  font-weight: 600;
+}
+
+.btn {
+  padding: 5px 15px;
+  width: 100%;
+  display: flex;
+  height: 40px;
+  border: none;
+  font-weight: 550;
+  gap: 2px;
+  font-family: "Audiowide";
+  color: white;
+  background-color: var(--primary-green);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 17px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(136, 206, 82, 0.95);
+}
+
+.projects-box {
+  padding: 30px 120px;
+}
+
+.contactMe-box {
+  padding: 30px 120px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 60px;
+  justify-content: space-between;
+  border-top: solid 1px grey;
+}
+
+.footer p {
+  font-size: medium;
+  margin: 20px;
+}
+
+.footer span {
+  color: #88ce52;
+}

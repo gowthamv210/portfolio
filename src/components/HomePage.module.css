@@ -1,0 +1,118 @@
+/* AUDIOWIDE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+/* GENOS FONT */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+.homeBox {
+  z-index: 998;
+}
+
+.homeProfile {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5.6rem;
+  gap: 13rem;
+}
+
+.homeBrief {
+  flex-wrap: wrap;
+  font-size: larger;
+}
+
+.homeBrief span {
+  gap: 5px;
+}
+
+.homeBrief span svg {
+  margin: 10px;
+  cursor: pointer;
+}
+.textContainer {
+  font-weight: 700;
+  font-family: "Audiowide";
+  display: inline-block;
+}
+
+.myPic {
+  width: 22rem;
+  height: 25rem;
+  border-radius: 3%;
+}
+
+.locationPin {
+  height: 25px;
+  width: 25px;
+}
+
+.letsConnect a svg {
+  transition: all 0.3s;
+}
+
+.letsConnect a svg:hover {
+  color: #88ce52;
+}
+
+@media (950px < width <= 1300px) {
+  .homeProfile {
+    padding: 5rem 4rem;
+    justify-content: center;
+    position: relative;
+    flex-wrap: nowrap;
+    gap: 5rem;
+  }
+
+  .myPic {
+    top: 0;
+    width: 20rem;
+    height: 23rem;
+    border-radius: 3%;
+  }
+  .locationPin {
+    height: 20px;
+    width: 25px;
+    padding: 0rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .homeProfile {
+    padding: 2rem 2rem;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .homeBrief h3 {
+    font-size: small;
+  }
+
+  .homeBrief h1 {
+    font-size: large;
+  }
+  .homeBrief h2 {
+    font-size: medium;
+  }
+
+  .homeBrief p {
+    font-size: smaller;
+    font-family: "Genos";
+    line-height: 1.5rem;
+    font-weight: 700;
+  }
+
+  .myPic {
+    width: 60%;
+    height: 25%;
+    border-radius: 3%;
+  }
+
+  .locationPin {
+    height: 15px;
+    width: 15px;
+    padding: 0px;
+  }
+}
