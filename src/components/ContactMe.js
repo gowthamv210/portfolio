@@ -12,7 +12,7 @@ export default function ContactMe() {
         <h4>Email Me 🚀</h4>
         <form
           target="_blank"
-          action="https://formsubmit.co/gowthamv0210@gmail.com"
+          action="https://formsubmit.co/4992d1651ec43cbd82f14e2a49c2b42e"
           method="POST"
         >
           <div className={styles.formBox}>

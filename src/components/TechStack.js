@@ -5,8 +5,9 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
-import { FaJava } from "react-icons/fa";
+import { SiCplusplus } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+/* import { FaJava } from "react-icons/fa"; */
 
 import { motion } from "framer-motion";
 
@@ -45,6 +46,7 @@ export default function TechStack() {
           <FaHtml5
             style={{ fontSize: "4.5rem", lineHeight: "1", color: "#E34F26" }}
           />
+          <span className={styles.hoverText}>HTML</span>
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -55,6 +57,7 @@ export default function TechStack() {
           <FaCss3
             style={{ fontSize: "4.5rem", lineHeight: "1", color: "#1572B6" }}
           />
+          <span className={styles.hoverText}>CSS</span>
         </motion.div>
         <motion.div
           variants={iconVariants(5)}
@@ -65,6 +68,7 @@ export default function TechStack() {
           <IoLogoJavascript
             style={{ fontSize: "4.5rem", lineHeight: "1", color: "#F7DF1E" }}
           />
+          <span className={styles.hoverText}>Javascript</span>
         </motion.div>
         <motion.div
           variants={iconVariants(2)}
@@ -75,6 +79,7 @@ export default function TechStack() {
           <RiReactjsLine
             style={{ fontSize: "4.5rem", lineHeight: "1", color: "#61DAFB" }}
           />
+          <span className={styles.hoverText}>ReactJS</span>
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -83,10 +88,11 @@ export default function TechStack() {
           className={styles.stackItem}
         >
           <FaPython
-            style={{ fontSize: "4.5rem", lineHeight: "1", color: "#3776AB" }}
+            style={{ fontSize: "4.5rem", lineHeight: "1", color: "#306998" }}
           />
+          <span className={styles.hoverText}>Python</span>
         </motion.div>
-        <motion.div
+        {/*  <motion.div
           variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
@@ -95,6 +101,18 @@ export default function TechStack() {
           <FaJava
             style={{ fontSize: "4.5rem", lineHeight: "1", color: "#007396" }}
           />
+           <span className={styles.hoverText}>Java</span>
+        </motion.div> */}
+        <motion.div
+          variants={iconVariants(2.5)}
+          initial="initial"
+          animate="animate"
+          className={styles.stackItem}
+        >
+          <SiCplusplus
+            style={{ fontSize: "4.5rem", lineHeight: "1", color: "#00599C" }}
+          />
+          <span className={styles.hoverText}>C++</span>
         </motion.div>
         <motion.div
           variants={iconVariants(4)}
@@ -105,6 +123,7 @@ export default function TechStack() {
           <FaNodeJs
             style={{ fontSize: "4.5rem", lineHeight: "1", color: "#339933" }}
           />
+          <span className={styles.hoverText}>NodeJs</span>
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -115,6 +134,7 @@ export default function TechStack() {
           <SiExpress
             style={{ fontSize: "4.5rem", lineHeight: "1", color: "#000000" }}
           />
+          <span className={styles.hoverText}>Expressjs</span>
         </motion.div>
         <motion.div
           variants={iconVariants(2.5)}
@@ -125,6 +145,7 @@ export default function TechStack() {
           <BiLogoPostgresql
             style={{ fontSize: "4.5rem", lineHeight: "1", color: "#336791" }}
           />
+          <span className={styles.hoverText}>PostgreSQL</span>
         </motion.div>
       </div>
     </div>

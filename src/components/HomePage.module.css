@@ -48,10 +48,11 @@
 }
 
 .letsConnect a svg {
-  transition: all 0.3s;
+  transition: transform 0.3s ease;
 }
 
-.letsConnect a svg:hover {
+.letsConnect:hover svg {
+  transform: translateX(10px);
   color: #88ce52;
 }
 

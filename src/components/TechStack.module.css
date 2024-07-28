@@ -22,6 +22,29 @@
 
 .stackItem {
   border-radius: 10px;
-  border: solid 1.8px #948282;
+  border: none;
   padding: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hoverText {
+  visibility: hidden;
+  width: max-content;
+  background-color: rgb(65, 62, 62);
+  color: #fff;
+  border: 0.5px solid rgb(65, 62, 62);
+  text-align: center;
+  padding: 2px 3px;
+  position: absolute;
+  z-index: 1;
+  bottom: -50%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.stackItem:hover .hoverText {
+  visibility: visible;
+  opacity: 1;
 }

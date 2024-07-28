@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import styles from "./TypeWriter.module.css";
 
 export default function TypeWriter() {
-  const texts = useMemo(() => ["Full-Stack Developer", "Tech Enthusiast"], []);
+  const texts = useMemo(() => ["Front-end Developer", "Tech Enthusiast"], []);
 
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);

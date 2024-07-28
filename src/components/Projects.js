@@ -12,8 +12,7 @@ export default function Projects() {
       </div>
       <div className={styles.projects_info}>
         <h4>My Recent Projects</h4>
-        {/* <ProjectList /> */}
-        <h2>Projects Coming Soon..</h2>
+        <ProjectList />
       </div>
     </div>
   );

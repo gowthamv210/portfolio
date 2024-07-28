@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
+import { IoIosArrowForward } from "react-icons/io";
 import styles from "./HomePage.module.css";
 import TechStack from "./TechStack";
 import TypeWriter from "./TypeWriter";
@@ -45,7 +45,7 @@ export default function HomePage() {
               }}
             >
               <h4>LET'S CONNECT </h4>
-              <FaRegArrowAltCircleRight
+              <IoIosArrowForward
                 style={{ fontSize: "1.5rem", margin: "0.7rem" }}
               />
             </Link>

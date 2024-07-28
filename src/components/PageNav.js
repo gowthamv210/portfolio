@@ -1,9 +1,9 @@
+import { useState, useEffect } from "react";
+import DownloadResume from "./DownloadResume.js";
+import ThemeToggle from "./ThemeToggle.js";
+import styles from "./PageNav.module.css";
 import { Link } from "react-scroll";
 import { IoMenu } from "react-icons/io5";
-
-import DownloadResume from "./DownloadResume.js";
-import styles from "./PageNav.module.css";
-import { useState, useEffect } from "react";
 
 export default function PageNav() {
   const [isSticky, setSticky] = useState(false);
@@ -98,6 +98,7 @@ export default function PageNav() {
             <li>
               <DownloadResume />
             </li>
+            <ThemeToggle />
           </ul>
           <input
             type="checkbox"
@@ -105,6 +106,7 @@ export default function PageNav() {
             onChange={handleCheckboxChange}
             id={styles.sidebarActive}
           />
+
           <label
             htmlFor={styles.sidebarActive}
             className={styles.openSidebarButton}
@@ -125,12 +127,11 @@ export default function PageNav() {
             className={styles.closeSidebarButton}
             style={{
               fontSize: "2.5rem",
-              marginTop: "10px",
-              marginRight: "20px",
             }}
           >
             &times;
           </label>
+          <ThemeToggle />
         </div>
         <ul>
           <li>
