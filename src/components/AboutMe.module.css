@@ -83,6 +83,11 @@
     gap: 2rem;
   }
 
+  .aboutMe_container img {
+    height: 55%;
+    width: 50%;
+  }
+
   .aboutMe_details {
     text-align: center;
     justify-content: center;
@@ -115,7 +120,7 @@
 
   .aboutMe_container img {
     height: 55%;
-    width: 100%;
+    width: 60%;
   }
 
   .aboutMe_details {

@@ -51,7 +51,7 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-        <img className={styles.myPic} src="images/my_pic.png" alt="My_Pic" />
+        {/*    <img className={styles.myPic} src="images/myPic.png" alt="My_Pic" /> */}
       </div>
       <div className={styles.skills}>
         <TechStack />

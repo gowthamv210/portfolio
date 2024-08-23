@@ -12,9 +12,11 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  padding: 5.6rem;
-  gap: 13rem;
+  padding: 8.6rem 10rem;
+  background-image: url("/public/images/myPic.png");
+  background-repeat: no-repeat;
+  background-position: 85% 30%;
+  background-size: 23%;
 }
 
 .homeBrief {
@@ -30,6 +32,7 @@
   margin: 10px;
   cursor: pointer;
 }
+
 .textContainer {
   font-weight: 700;
   font-family: "Audiowide";
@@ -39,7 +42,7 @@
 .myPic {
   width: 22rem;
   height: 25rem;
-  border-radius: 3%;
+  /*   border-radius: 3%; */
 }
 
 .locationPin {
@@ -58,11 +61,13 @@
 
 @media (950px < width <= 1300px) {
   .homeProfile {
-    padding: 5rem 4rem;
-    justify-content: center;
+    padding: 5rem 6rem;
     position: relative;
     flex-wrap: nowrap;
-    gap: 5rem;
+
+    background-repeat: no-repeat;
+    background-position: 89% 30%;
+    background-size: 23%;
   }
 
   .myPic {
@@ -71,6 +76,7 @@
     height: 23rem;
     border-radius: 3%;
   }
+
   .locationPin {
     height: 20px;
     width: 25px;
@@ -80,11 +86,13 @@
 
 @media (max-width: 950px) {
   .homeProfile {
-    padding: 2rem 2rem;
+    padding: 2rem 4rem;
     flex-wrap: wrap-reverse;
     align-items: center;
-    justify-content: center;
-    gap: 3rem;
+
+    background-repeat: no-repeat;
+    background-position: 90% 30%;
+    background-size: 23%;
   }
 
   .homeBrief h3 {
@@ -115,5 +123,18 @@
     height: 15px;
     width: 15px;
     padding: 0px;
+  }
+}
+
+@media (300px <= width <= 750px) {
+  .homeProfile {
+    flex-direction: column;
+    padding: 2rem;
+    height: 500px;
+    align-items: center;
+    justify-content: end;
+    background-repeat: no-repeat;
+    background-position: 50% 2%;
+    background-size: 50%;
   }
 }
