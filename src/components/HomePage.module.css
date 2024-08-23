@@ -12,10 +12,10 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding: 8.6rem 10rem;
+  padding: 12rem 10rem;
   background-image: url("/public/images/myPic.png");
   background-repeat: no-repeat;
-  background-position: 85% 30%;
+  background-position: 87% 30%;
   background-size: 23%;
 }
 
