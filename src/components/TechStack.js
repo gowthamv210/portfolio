@@ -5,9 +5,9 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
-import { SiCplusplus } from "react-icons/si";
+/* import { SiCplusplus } from "react-icons/si"; */
 import { BiLogoPostgresql } from "react-icons/bi";
-/* import { FaJava } from "react-icons/fa"; */
+import { FaJava } from "react-icons/fa";
 
 import { motion } from "framer-motion";
 
@@ -92,7 +92,7 @@ export default function TechStack() {
           />
           <span className={styles.hoverText}>Python</span>
         </motion.div>
-        {/*  <motion.div
+        <motion.div
           variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
@@ -101,9 +101,9 @@ export default function TechStack() {
           <FaJava
             style={{ fontSize: "4.5rem", lineHeight: "1", color: "#007396" }}
           />
-           <span className={styles.hoverText}>Java</span>
-        </motion.div> */}
-        <motion.div
+          <span className={styles.hoverText}>Java</span>
+        </motion.div>
+        {/*  <motion.div
           variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
@@ -113,7 +113,7 @@ export default function TechStack() {
             style={{ fontSize: "4.5rem", lineHeight: "1", color: "#00599C" }}
           />
           <span className={styles.hoverText}>C++</span>
-        </motion.div>
+        </motion.div> */}
         <motion.div
           variants={iconVariants(4)}
           initial="initial"

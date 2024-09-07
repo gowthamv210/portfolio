@@ -36,7 +36,7 @@ export default function SocialHandle() {
         aria-label="Instagram"
         target="_blank"
         rel="noopener noreferrer"
-        href="https://www.instagram.com/justgowtham._77/"
+        href="https://www.instagram.com/__gowtham.02__/"
       >
         <FaInstagram className={styles.instagram_icon} />
       </a>
