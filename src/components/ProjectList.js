@@ -5,7 +5,13 @@ import { projects } from "../constants/index";
 export default function ProjectList() {
   return (
     <div>
-      <ul style={{ display: "flex", justifyContent: "center" }}>
+      <ul
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+        }}
+      >
         {projects.map((project, index) => (
           <ProjectItem
             key={index}

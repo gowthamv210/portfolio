@@ -83,7 +83,7 @@ export default function ProjectItem({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <BsBoxArrowUpRight /> <span>Live Project</span>
+            <BsBoxArrowUpRight /> <span>Live Demo</span>
           </a>
         </div>
       </div>

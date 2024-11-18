@@ -78,6 +78,7 @@
   width: 100%;
   overflow: hidden;
   position: relative;
+  width: max-content;
 }
 
 .carouselImages {
@@ -141,7 +142,6 @@
   transition: transform 0.3s ease-out;
 }
 
-/* Hover effect */
 .projectLinkText span:hover::after {
   transform: scaleX(1.1);
   transform-origin: bottom left;
